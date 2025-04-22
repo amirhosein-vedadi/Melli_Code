@@ -1,0 +1,50 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "melli-code" 
+version = "1.0.0" # <--- MUST match __version__ in src/melli_code/__init__.py
+authors = [
+    { name="Majid Hooshiyar"},
+    { name="Amirhosein Vedadi", email="amirhsein.vedadi@gmail.com" },
+]
+description = "Python library to validate and generate Iranian National Codes (Melli Code)."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Natural Language :: Persian", # Farsi
+]
+keywords = ["iran", "national code", "melli code", "validation", "generation", "کد ملی", "ایران"]
+# No runtime dependencies needed
+# dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/amirhosein-vedadi/Melli_Code"
+Repository = "https://github.com/amirhosein-vedadi/Melli_Code"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "build",        # For building the package
+    "twine",        # For uploading to PyPI
+]
+
+# Tells setuptools where to find the package code relative to pyproject.toml
+[tool.setuptools.packages.find]
+where = ["src"]
