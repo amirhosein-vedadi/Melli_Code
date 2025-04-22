@@ -5,7 +5,7 @@ Melli Code: Iranian National Code Validator and Generator.
 Provides functions to validate existing codes and generate new valid codes
 according to the official algorithm. Package name: melli-code.
 """
-__version__ = "1.0.0" # <--- Set initial version
+__version__ = "1.0.1" # <--- Set initial version
 
 from .validator import is_valid, validate
 from .generator import generate

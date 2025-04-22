@@ -5,9 +5,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "melli-code" 
-version = "1.0.0" # <--- MUST match __version__ in src/melli_code/__init__.py
+version = "1.0.1" # <--- MUST match __version__ in src/melli_code/__init__.py
 authors = [
-    { name="Majid Hooshiyar"},
     { name="Amirhosein Vedadi", email="amirhsein.vedadi@gmail.com" },
 ]
 description = "Python library to validate and generate Iranian National Codes (Melli Code)."
